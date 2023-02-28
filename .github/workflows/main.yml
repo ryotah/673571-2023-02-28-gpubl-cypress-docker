@@ -3,7 +3,8 @@ on: [push]
 jobs:
   job1:
     runs-on: ubuntu-latest
-    container: cypress/base:18.14.1
+    container: cypress/base:18.14.0
+    # container: cypress/base:18.14.1
     # container: cypress/base:16.5.0
     # container: cypress/base:16.13.0
     steps:
