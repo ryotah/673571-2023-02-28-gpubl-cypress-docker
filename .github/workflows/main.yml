@@ -1,0 +1,13 @@
+name: ci
+on: [push]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    # container: cypress/base:18.14.1
+    # container: cypress/base:16.5.0
+    # container: cypress/base:16.13.0
+    steps:
+      - uses: actions/checkout@v3
+      - run: node -v
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
